@@ -36,15 +36,71 @@
                 </div>
             </div>
             <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <h1>Projects</h1>
-                        <p>List of my projects :</p>
-                        <div class="portfolio">
-                            div
-                        </div>
-                    </div>
+
+                <div class="gallery">
+                    <a target="_blank" href="fjords.jpg">
+                        <img src="fjords.jpg" alt="Fjords" width="300" height="200">
+                    </a>
+                    <div class="desc">Add a description of the image here</div>
                 </div>
+
+                <div class="gallery">
+                    <a target="_blank" href="forest.jpg">
+                        <img src="forest.jpg" alt="Forest" width="300" height="200">
+                    </a>
+                    <div class="desc">Add a description of the image here</div>
+                </div>
+
+                <div class="gallery">
+                    <a target="_blank" href="lights.jpg">
+                        <img src="lights.jpg" alt="Northern Lights" width="300" height="200">
+                    </a>
+                    <div class="desc">Add a description of the image here</div>
+                </div>
+
+                <div class="gallery">
+                    <a target="_blank" href="2.png">
+                        <img src="mountains.jpg" alt="Mountains" width="300" height="200">
+                    </a>
+                    <div class="desc">Add a description of the image here</div>
+                </div>
+            </div>
+            <div class="container">
+                    <div id="contact" class="text-center">
+                            <div class="overlay">
+                              <div class="container">
+                                <div class="section-title center">
+                                  <h2>me contacter</h2>
+                                  <hr>
+                                </div>
+                                <div class="col-md-8 col-md-offset-2">
+                                  <form name="sentMessage" id="contactForm" action="mail/contact_me.php" novalidate>
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                          <input type="text" id="name" class="form-control" placeholder="Nom" required="required">
+                                          <p class="help-block text-danger"></p>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                          <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+                                          <p class="help-block text-danger"></p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="form-group">
+                                      <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+                                      <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div id="success"></div>
+                                    <button type="submit" class="btn btn-default">envoyer le Message</button>
+                                  </form>
+                            
+                                </div>
+                              </div>
+                            </div>
+                          </div>
             </div>
         </div>
         <script src="js/script.js"></script>
