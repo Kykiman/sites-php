@@ -5,8 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/blockScroll.css">
+     <!--   <link rel="stylesheet" type="text/css" href="css/blockScroll.css"> -->
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/gallery.css">
         <title>Kylian Manzini - Homepage</title>
     </head>
     <body>
@@ -36,89 +37,113 @@
                 </div>
             </div>
             <div class="container">
-
-                <div class="gallery">
-                    <a target="_blank" href="fjords.jpg">
-                        <img src="fjords.jpg" alt="Fjords" width="300" height="200">
-                    </a>
-                    <div class="desc">Add a description of the image here</div>
+                <h1>List of projects :</h1>
+                <div class="toolbar mb2 mt2">
+                    <button class="btn fil-cat" href="" data-rel="all">All</button>
+                    <button class="btn fil-cat" data-rel="web">Web</button>
+                    <button class="btn fil-cat" data-rel="design">Design</button>
+                    <button class="btn fil-cat" data-rel="marketing">Marketing</button>
                 </div>
 
-                <div class="gallery">
-                    <a target="_blank" href="forest.jpg">
-                        <img src="forest.jpg" alt="Forest" width="300" height="200">
-                    </a>
-                    <div class="desc">Add a description of the image here</div>
+                <div id="portfolio">
+                    <div class="tile scale-anm web all">
+                        <img
+                            src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/2-mon_1092-300x234.jpg"
+                            alt=""/>
+                    </div>
+                    <div class="tile scale-anm bcards all">
+                        <img
+                            src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/jti-icons_08-300x172.jpg"
+                            alt=""/>
+                    </div>
+                    <div class="tile scale-anm flyers all">
+                        <img
+                            src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/emi_haze-300x201.jpg"
+                            alt=""/>
+                    </div>
                 </div>
 
-                <div class="gallery">
-                    <a target="_blank" href="lights.jpg">
-                        <img src="lights.jpg" alt="Northern Lights" width="300" height="200">
-                    </a>
-                    <div class="desc">Add a description of the image here</div>
-                </div>
-
-                <div class="gallery">
-                    <a target="_blank" href="2.png">
-                        <img src="mountains.jpg" alt="Mountains" width="300" height="200">
-                    </a>
-                    <div class="desc">Add a description of the image here</div>
-                </div>
+                <div style="clear:both;"></div>
             </div>
-            <div class="container">
-                    <div id="contact" class="text-center">
-                            <div class="overlay">
-                              <div class="container">
-                                <div class="section-title center">
-                                  <h2>me contacter</h2>
-                                  <hr>
-                                </div>
-                                <div class="col-md-8 col-md-offset-2">
-                                  <form name="sentMessage" id="contactForm" action="mail/contact_me.php" novalidate>
-                                    <div class="row">
-                                      <div class="col-md-6">
-                                        <div class="form-group">
-                                          <input type="text" id="name" class="form-control" placeholder="Nom" required="required">
-                                          <p class="help-block text-danger"></p>
-                                        </div>
-                                      </div>
-                                      <div class="col-md-6">
-                                        <div class="form-group">
-                                          <input type="email" id="email" class="form-control" placeholder="Email" required="required">
-                                          <p class="help-block text-danger"></p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
-                                      <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div id="success"></div>
-                                    <button type="submit" class="btn btn-default">envoyer le Message</button>
-                                  </form>
-                            
-                                </div>
-                              </div>
+            <div class="container custommargintop">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <form
+                            name="sentMessage"
+                            id="contactForm"
+                            action="mail/contact_me.php"
+                            novalidate="novalidate">
+
+                            <h1>Contact me</h1>
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    id="name"
+                                    class="form-control"
+                                    placeholder="Your name"
+                                    required="required">
                             </div>
-                          </div>
-            </div>
+                            <div class="form-group">
+                                <input
+                                    type="email"
+                                    id="email"
+                                    class="form-control"
+                                    placeholder="Your email"
+                                    required="required">
+                            </div>
+
+                            <div class="form-group">
+                                <textarea
+                                    name="message"
+                                    id="message"
+                                    class="form-control"
+                                    rows="4"
+                                    placeholder="Message"
+                                    required="required"></textarea>
+                            </div>
+                            <div id="success"></div>
+                            <button type="submit" class="btn btn-default">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
-        <script src="js/script.js"></script>
-        <script src="js/jquery.js"></script>
-        <script src="js/blockScroll.js"></script>
-        <script src="js/typed.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script>
-            var typed = new Typed('.typing', {
-                strings: ["Who am I ?"],
-                typeSpeed: 100,
-                startDelay: 1000,
-                loop: false
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.js"></script>
+   <!--  <script src="js/blockScroll.js"></script> --> 
+    <script src="js/typed.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        var typed = new Typed('.typing', {
+            strings: ["Who am I ?"],
+            typeSpeed: 100,
+            startDelay: 1000,
+            loop: false
+        });
+      /*  $(function () {
+            var blockScroller = $("#main-wrap").blockScroll();
+        }); */
+        //gallery part
+        $(function () {
+            var selectedClass = "";
+            $(".fil-cat").click(function () {
+                selectedClass = $(this).attr("data-rel");
+                $("#portfolio").fadeTo(100, 0.1);
+                $("#portfolio div")
+                    .not("." + selectedClass)
+                    .fadeOut()
+                    .removeClass('scale-anm');
+                setTimeout(function () {
+                    $("." + selectedClass)
+                        .fadeIn()
+                        .addClass('scale-anm');
+                    $("#portfolio").fadeTo(300, 1);
+                }, 300);
+
             });
-            $(function () {
-                var blockScroller = $("#main-wrap").blockScroll();
-            });
-        </script>
-    </body>
+        });
+    </script>
+</body>
 </html>
